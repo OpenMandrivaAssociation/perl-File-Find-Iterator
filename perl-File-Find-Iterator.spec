@@ -13,7 +13,6 @@ Source: 	http://search.cpan.org/CPAN/authors/id/T/TE/TEXMEC/%{module}-%{version}
 Url: 		http://search.cpan.org/dist/%{module}
 BuildRequires: perl-devel
 BuildRequires: perl(Class::Iterator)
-BuildRoot: 	%{_tmppath}/%{name}-buildroot/
 BuildArch: noarch
 
 %description
