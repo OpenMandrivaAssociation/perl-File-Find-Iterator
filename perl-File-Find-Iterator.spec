@@ -1,7 +1,7 @@
 %define module File-Find-Iterator
 %define name perl-%{module}
-%define version 0.3
-%define release %mkrel 5
+%define version 0.4
+%define release %mkrel 1
 
 Summary: 	Iterator interface for search files
 Name: 		%{name}
