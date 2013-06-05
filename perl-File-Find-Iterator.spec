@@ -5,11 +5,11 @@
 
 Summary: 	Iterator interface for search files
 Name: 		%{name}
-Version: 	%{version}
-Release: 	%{release}
+Version: 	%perl_convert_version 0.4
+Release: 	1
 License: 	GPL or Artistic
 Group: 		Development/Perl
-Source: 	http://search.cpan.org/CPAN/authors/id/T/TE/TEXMEC/%{module}-%{version}.tar.gz
+Source: 	http://search.cpan.org/CPAN/authors/id/T/TE/TEXMEC/File-Find-Iterator-0.4.tar.gz
 Url: 		http://search.cpan.org/dist/%{module}
 BuildRequires: perl-devel
 BuildRequires: perl(Class::Iterator)
@@ -84,4 +84,5 @@ Import perl-File-Find-Iterator
 
 * Thu Jun 16 2005 Olivier Thauvin <nanardon@mandriva.org> 0.3-1mdk
 - first mdk release
+
 
