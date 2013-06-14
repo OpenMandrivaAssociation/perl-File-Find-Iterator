@@ -1,19 +1,16 @@
 %define module File-Find-Iterator
-%define name perl-%{module}
-%define version 0.4
-%define release %mkrel 3
+%define upstream_version 0.4
 
 Summary: 	Iterator interface for search files
-Name: 		%{name}
+Name: 		perl-%{module}
 Version: 	%perl_convert_version 0.4
-Release: 	1
+Release: 	4
 License: 	GPL or Artistic
 Group: 		Development/Perl
 Source: 	http://search.cpan.org/CPAN/authors/id/T/TE/TEXMEC/File-Find-Iterator-0.4.tar.gz
 Url: 		http://search.cpan.org/dist/%{module}
 BuildRequires: perl-devel
 BuildRequires: perl(Class::Iterator)
-BuildRoot: 	%{_tmppath}/%{name}-buildroot/
 BuildArch: noarch
 
 %description
@@ -23,7 +20,7 @@ can easily save the search state when you want to stop the search
 and continue the same search later.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{module}-%{upstream_version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
@@ -33,14 +30,9 @@ and continue the same search later.
 make test
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
-%clean 
-rm -rf $RPM_BUILD_ROOT
-
 %files
-%defattr(-,root,root)
 %doc README
 %{_mandir}/*/*
 %{perl_vendorlib}/*
