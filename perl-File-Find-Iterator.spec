@@ -4,7 +4,7 @@
 Summary: 	Iterator interface for search files
 Name: 		perl-%{module}
 Version: 	%perl_convert_version 0.4
-Release: 	5
+Release: 	6
 License: 	GPL or Artistic
 Group: 		Development/Perl
 Source: 	http://search.cpan.org/CPAN/authors/id/T/TE/TEXMEC/File-Find-Iterator-0.4.tar.gz
