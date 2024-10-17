@@ -8,7 +8,7 @@ Release: 	6
 License: 	GPL or Artistic
 Group: 		Development/Perl
 Source: 	http://search.cpan.org/CPAN/authors/id/T/TE/TEXMEC/File-Find-Iterator-0.4.tar.gz
-Url: 		http://search.cpan.org/dist/%{module}
+Url: 		https://search.cpan.org/dist/%{module}
 BuildRequires: perl-devel
 BuildRequires: perl(Class::Iterator)
 BuildArch: noarch
